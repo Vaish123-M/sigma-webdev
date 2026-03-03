@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Percent in Animation</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .bar {
+      width: 60px; /* bar width */
+      height: 30px; /* bar height */
+      background: #f97316; /* start color */
+      animation: travel 3s linear infinite; /* move using keyframe percentages */
+      position: relative; /* allows left movement */
+    }
+    @keyframes travel {
+      0% { left: 0; background: #f97316; /* start state */ }
+      50% { left: 140px; background: #fb7185; /* middle state */ }
+      100% { left: 280px; background: #f97316; /* final state */ }
+    }
+  </style>
+</head>
+<body>
+  <h1>Using % in @keyframes</h1>
+  <p>Percentages define animation stages: start (0%), middle (50%), end (100%).</p>
+  <div class="bar"></div>
+</body>
+</html>
