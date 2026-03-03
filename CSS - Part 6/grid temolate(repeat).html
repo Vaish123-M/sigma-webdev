@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grid Template Repeat</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .repeat-grid {
+      display: grid; /* makes children grid items */
+      grid-template-columns: repeat(4, 80px); /* 4 equal columns */
+      gap: 10px; /* space between boxes */
+    }
+    .cell { padding: 15px 0; /* top-bottom spacing */ text-align: center; /* center letters */ background: #dcfce7; /* light green fill */ border: 1px solid #86efac; /* box boundary */ }
+  </style>
+</head>
+<body>
+  <h1>repeat() in Grid Template</h1>
+  <p><strong>repeat(4, 80px)</strong> means 4 columns, each 80px.</p>
+
+  <div class="repeat-grid">
+    <div class="cell">A</div>
+    <div class="cell">B</div>
+    <div class="cell">C</div>
+    <div class="cell">D</div>
+  </div>
+</body>
+</html>

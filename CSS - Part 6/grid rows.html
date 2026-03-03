@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grid Rows</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .rows {
+      display: grid; /* enables grid */
+      grid-template-columns: repeat(2, 120px); /* 2 columns */
+      grid-template-rows: 50px 90px 60px; /* 3 rows with custom heights */
+      gap: 8px; /* space between row/column tracks */
+    }
+    .rows div { background: #fef3c7; /* box fill */ border: 1px solid #fcd34d; /* border */ text-align: center; /* center label */ padding-top: 10px; /* top spacing */ }
+  </style>
+</head>
+<body>
+  <h1>Grid Rows</h1>
+  <p>Row sizes are controlled using <strong>grid-template-rows</strong>.</p>
+
+  <div class="rows">
+    <div>R1</div><div>R1</div>
+    <div>R2</div><div>R2</div>
+    <div>R3</div><div>R3</div>
+  </div>
+</body>
+</html>

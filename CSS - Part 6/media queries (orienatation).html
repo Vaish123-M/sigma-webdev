@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media Query Orientation</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .panel {
+      padding: 20px; /* inside spacing */
+      border: 2px solid #a78bfa; /* panel border */
+      background: #f5f3ff; /* portrait/default background */
+    }
+    @media (orientation: landscape) {
+      .panel { background: #dcfce7; /* landscape background */ border-color: #4ade80; /* landscape border color */ }
+    }
+  </style>
+</head>
+<body>
+  <h1>Media Query (Orientation)</h1>
+  <p>In landscape mode, panel color changes.</p>
+  <div class="panel">Rotate phone/device to test orientation query.</div>
+</body>
+</html>

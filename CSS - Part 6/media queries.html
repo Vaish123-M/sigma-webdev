@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media Queries</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .card {
+      width: 360px; /* normal desktop width */
+      padding: 15px; /* space inside card */
+      border: 2px solid #94a3b8; /* card outline */
+      background: #f8fafc; /* default background */
+    }
+    @media (max-width: 480px) {
+      .card {
+        width: 100%; /* full width on small screens */
+        background: #e0f2fe; /* color change to show breakpoint applied */
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Media Queries</h1>
+  <p>Resize browser below 480px to see style change.</p>
+  <div class="card">I become full width on small screens.</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grid Model</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .model {
+      display: grid; /* enables grid layout */
+      grid-template-columns: 1fr 2fr; /* first column smaller, second larger */
+      gap: 8px; /* spacing between grid items */
+      max-width: 500px; /* limits total container width */
+    }
+    .box { padding: 12px; /* inside spacing */ border: 1px solid #9ca3af; /* visible outline */ background: #f3f4f6; /* light background */ }
+  </style>
+</head>
+<body>
+  <h1>Grid Model</h1>
+  <p>Grid model = container + rows + columns + grid items.</p>
+
+  <div class="model">
+    <div class="box">Column 1</div>
+    <div class="box">Column 2</div>
+    <div class="box">Row 2 Col 1</div>
+    <div class="box">Row 2 Col 2</div>
+  </div>
+</body>
+</html>

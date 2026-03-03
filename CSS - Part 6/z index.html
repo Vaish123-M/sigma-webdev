@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Z-Index</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .area { position: relative; /* reference box for absolute children */ height: 150px; /* demo area height */ }
+    .box {
+      width: 120px; /* box width */
+      height: 120px; /* box height */
+      position: absolute; /* allows overlap */
+      color: white; /* text color */
+      display: grid; /* easy centering */
+      place-items: center; /* center content horizontally + vertically */
+      font-weight: bold; /* bold label text */
+    }
+    .one { background: #ef4444; /* red box */ left: 30px; /* x position */ top: 20px; /* y position */ z-index: 1; /* lower layer */ }
+    .two { background: #3b82f6; /* blue box */ left: 80px; /* x position */ top: 45px; /* y position */ z-index: 2; /* higher layer = appears on top */ }
+  </style>
+</head>
+<body>
+  <h1>z-index</h1>
+  <p>Higher <strong>z-index</strong> appears on top (only for positioned elements).</p>
+
+  <div class="area">
+    <div class="box one">z:1</div>
+    <div class="box two">z:2</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grid Columns</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .cols {
+      display: grid; /* activates grid */
+      grid-template-columns: 120px 2fr 1fr; /* fixed + flexible columns */
+      gap: 10px; /* spacing between columns/items */
+    }
+    .cols div { background: #e0e7ff; /* cell background */ border: 1px solid #a5b4fc; /* cell border */ padding: 12px; /* cell inner space */ text-align: center; /* center text */ }
+  </style>
+</head>
+<body>
+  <h1>Grid Columns</h1>
+  <p>Columns can be fixed (px) or flexible (fr).</p>
+
+  <div class="cols">
+    <div>120px</div>
+    <div>2fr</div>
+    <div>1fr</div>
+  </div>
+</body>
+</html>

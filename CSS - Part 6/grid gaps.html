@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grid Gaps</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .gaps {
+      display: grid; /* creates grid layout */
+      grid-template-columns: repeat(3, 90px); /* 3 equal columns */
+      row-gap: 20px; /* vertical space */
+      column-gap: 8px; /* horizontal space */
+    }
+    .gaps div { background: #fee2e2; /* light red background */ border: 1px solid #fca5a5; /* border line */ text-align: center; /* center text */ padding: 10px; /* inner spacing */ }
+  </style>
+</head>
+<body>
+  <h1>Grid Gaps</h1>
+  <p>Use <strong>row-gap</strong> and <strong>column-gap</strong> to create spacing.</p>
+
+  <div class="gaps">
+    <div>1</div><div>2</div><div>3</div>
+    <div>4</div><div>5</div><div>6</div>
+  </div>
+</body>
+</html>

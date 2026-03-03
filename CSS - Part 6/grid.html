@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grid - CSS Part 6</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .grid {
+      display: grid; /* turns box into a grid container */
+      grid-template-columns: 100px 100px 100px; /* creates 3 fixed-width columns */
+      gap: 10px; /* same spacing between rows and columns */
+    }
+    .item { background: #dbeafe; /* item background color */ border: 1px solid #93c5fd; /* item border */ padding: 12px; /* inner space */ text-align: center; /* center text */ }
+  </style>
+</head>
+<body>
+  <h1>CSS Grid</h1>
+  <p>Grid helps arrange items in rows and columns.</p>
+
+  <div class="grid">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+  </div>
+</body>
+</html>

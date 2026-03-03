@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animation Shorthand</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .box {
+      width: 70px; /* box width */
+      height: 70px; /* box height */
+      background: #34d399; /* box color */
+      animation: jump 1.2s ease-in-out 0s infinite alternate; /* shorthand: name duration timing delay count direction */
+      /* name duration timing delay count direction */
+    }
+    @keyframes jump {
+      from { transform: translateY(0); /* normal position */ }
+      to { transform: translateY(-40px); /* moves up */ }
+    }
+  </style>
+</head>
+<body>
+  <h1>Animation Shorthand</h1>
+  <p>Use one line: <strong>animation: name duration timing delay count direction;</strong></p>
+  <div class="box"></div>
+</body>
+</html>

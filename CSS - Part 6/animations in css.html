@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animations in CSS</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .ball {
+      width: 50px; /* circle width */
+      height: 50px; /* circle height */
+      border-radius: 50%; /* makes square into circle */
+      background: #60a5fa; /* circle color */
+      animation-name: moveRight; /* links keyframes name */
+      animation-duration: 2s; /* one cycle takes 2 seconds */
+      animation-iteration-count: infinite; /* keeps repeating */
+      animation-direction: alternate; /* forward then backward */
+    }
+    @keyframes moveRight {
+      from { transform: translateX(0); /* start position */ }
+      to { transform: translateX(220px); /* end position */ }
+    }
+  </style>
+</head>
+<body>
+  <h1>Animations in CSS</h1>
+  <p>Animation needs <strong>@keyframes</strong> + animation properties.</p>
+  <div class="ball"></div>
+</body>
+</html>

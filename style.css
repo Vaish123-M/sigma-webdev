@@ -1,0 +1,25 @@
+
+* {
+    background-color: blueviolet;
+}
+
+h3{
+    color: aquamarine;
+}
+
+h1,h2 {
+    color: brown;
+}
+
+#login{
+    background-color: beige;
+}
+
+#signup {
+    background-color: burlywood;
+}
+
+.upvote {
+    background-color: antiquewhite;
+    color: black;
+}

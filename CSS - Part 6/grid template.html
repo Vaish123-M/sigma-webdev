@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grid Template</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .layout {
+      display: grid; /* starts grid system */
+      grid-template-columns: 150px 1fr; /* 2 columns: fixed + flexible */
+      grid-template-rows: 60px 120px; /* sets height of each row */
+      gap: 10px; /* equal spacing between cells */
+    }
+    .layout div { border: 1px solid #c4b5fd; /* border around cells */ background: #ede9fe; /* cell color */ padding: 10px; /* content spacing */ }
+  </style>
+</head>
+<body>
+  <h1>grid-template</h1>
+  <p>Use <strong>grid-template-columns</strong> and <strong>grid-template-rows</strong> to design structure.</p>
+
+  <div class="layout">
+    <div>Header Side</div>
+    <div>Main Header</div>
+    <div>Menu</div>
+    <div>Content</div>
+  </div>
+</body>
+</html>

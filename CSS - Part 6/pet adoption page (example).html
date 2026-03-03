@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Adoption Page Example</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background: #f8fafc; /* page background */ }
+    h1 { text-align: center; /* center main heading */ }
+    .pets {
+      display: grid; /* card layout using grid */
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* responsive columns */
+      gap: 14px; /* spacing between cards */
+      margin-top: 20px; /* space below intro text */
+    }
+    .card {
+      border: 1px solid #cbd5e1; /* card border */
+      background: #ffffff; /* card color */
+      padding: 12px; /* inner space */
+      border-radius: 8px; /* rounded corners */
+    }
+    .badge { display: inline-block; /* allows padding in span */ padding: 3px 8px; /* badge size */ background: #dbeafe; /* badge color */ border-radius: 12px; /* pill shape */ font-size: 12px; /* small label text */ }
+  </style>
+</head>
+<body>
+  <h1>Pet Adoption</h1>
+  <p>Example page using simple grid cards.</p>
+
+  <section class="pets">
+    <article class="card">
+      <h3>Bruno</h3>
+      <p>Friendly dog, age 2.</p>
+      <span class="badge">Available</span>
+    </article>
+    <article class="card">
+      <h3>Milo</h3>
+      <p>Playful cat, age 1.</p>
+      <span class="badge">Available</span>
+    </article>
+    <article class="card">
+      <h3>Luna</h3>
+      <p>Calm rabbit, age 1.5.</p>
+      <span class="badge">Adopted</span>
+    </article>
+  </section>
+</body>
+</html>

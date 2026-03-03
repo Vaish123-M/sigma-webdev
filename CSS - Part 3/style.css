@@ -1,0 +1,14 @@
+div {
+    height: 200px;
+    width : 500px;
+    background-color: lightcoral;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+}
+
+h1{
+    background-color: aqua;
+    border-color: blueviolet;
+    border-style: dotted;
+}
