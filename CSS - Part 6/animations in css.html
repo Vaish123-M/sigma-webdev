@@ -6,6 +6,14 @@
   <title>Animations in CSS</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 20px; }
+    .notes {
+      border: 1px solid #cbd5e1;
+      padding: 12px;
+      margin: 12px 0 18px;
+      background: #f8fafc;
+      max-width: 760px;
+    }
+    .notes li { margin-bottom: 8px; }
     .ball {
       width: 50px; /* circle width */
       height: 50px; /* circle height */
@@ -13,8 +21,12 @@
       background: #60a5fa; /* circle color */
       animation-name: moveRight; /* links keyframes name */
       animation-duration: 2s; /* one cycle takes 2 seconds */
+      animation-timing-function: ease-in-out; /* controls speed curve (slow-fast-slow) */
+      animation-delay: 0.4s; /* waits before animation starts */
       animation-iteration-count: infinite; /* keeps repeating */
       animation-direction: alternate; /* forward then backward */
+      /* Equivalent shorthand example:
+        animation: moveRight 2s ease-in-out 0.4s infinite alternate; */
     }
     @keyframes moveRight {
       from { transform: translateX(0); /* start position */ }
@@ -25,6 +37,20 @@
 <body>
   <h1>Animations in CSS</h1>
   <p>Animation needs <strong>@keyframes</strong> + animation properties.</p>
+
+  <section class="notes">
+    <h2>Property Definitions + Use Case</h2>
+    <ul>
+      <li><strong>animation-name</strong>: Selects which <code>@keyframes</code> to run. <em>Use case:</em> Reuse different motion styles like <code>slide</code>, <code>fade</code>, <code>bounce</code>.</li>
+      <li><strong>animation-duration</strong>: Time for one full cycle. <em>Use case:</em> Keep micro-animations short (0.2s–0.6s), loaders longer.</li>
+      <li><strong>animation-timing-function</strong>: Controls speed pattern (<code>linear</code>, <code>ease</code>, etc.). <em>Use case:</em> Natural UI motion with <code>ease-in-out</code>.</li>
+      <li><strong>animation-delay</strong>: Wait time before start. <em>Use case:</em> Stagger multiple cards/buttons for better visual sequence.</li>
+      <li><strong>animation-iteration-count</strong>: Number of repeats (<code>1</code>, <code>3</code>, <code>infinite</code>). <em>Use case:</em> Infinite for loaders, single run for intro effects.</li>
+      <li><strong>animation-direction</strong>: Playback direction (<code>normal</code>, <code>reverse</code>, <code>alternate</code>). <em>Use case:</em> <code>alternate</code> for smooth back-and-forth motion.</li>
+      <li><strong>Equivalent shorthand:</strong> Instead of writing all separate properties, you can write one line like <code>animation: widthAnimate 3s ease-in 0s infinite normal;</code> (same effect if values match).</li>
+    </ul>
+  </section>
+
   <div class="ball"></div>
 </body>
 </html>

@@ -6,6 +6,14 @@
   <title>Animation Shorthand</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 20px; }
+    .notes {
+      border: 1px solid #cbd5e1;
+      padding: 12px;
+      margin: 12px 0 18px;
+      background: #f8fafc;
+      max-width: 760px;
+    }
+    .notes li { margin-bottom: 8px; }
     .box {
       width: 70px; /* box width */
       height: 70px; /* box height */
@@ -22,6 +30,18 @@
 <body>
   <h1>Animation Shorthand</h1>
   <p>Use one line: <strong>animation: name duration timing delay count direction;</strong></p>
+
+  <section class="notes">
+    <h2>Definition + Use Case</h2>
+    <ul>
+      <li><strong>Definition:</strong> <code>animation</code> shorthand combines many animation properties in one line.</li>
+      <li><strong>Order (common):</strong> <code>animation: name duration timing-function delay iteration-count direction;</code></li>
+      <li><strong>Example meaning:</strong> <code>jump 1.2s ease-in-out 0s infinite alternate</code> = run <code>jump</code> for 1.2s, smooth speed, no delay, repeat forever, go forward/backward.</li>
+      <li><strong>Use case:</strong> Write cleaner CSS and avoid repeating separate animation properties.</li>
+      <li><strong>Tip:</strong> Duration and name are most important; other values can be added as needed.</li>
+    </ul>
+  </section>
+
   <div class="box"></div>
 </body>
 </html>
